@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1 class="page-title">User Profile Viewer</h1>
+            <p class="subtitle">Click on a user to view their details</p>
+        </header>
+        
+        <div class="content-container">
+            <div class="user-list-container">
+                <h2 class="section-title">Users</h2>
+                <ul class="user-list" id="userList">
+                    <div class="loading">Loading users...</div>
+                </ul>
+            </div>
+            
+            <div class="user-details-container">
+                <h2 class="section-title">User Details</h2>
+                <div id="userDetails">
+                    <div class="no-selection">Select a user to view their details</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
