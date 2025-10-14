@@ -1,7 +1,6 @@
 // Function to fetch users from the API
 async function fetchUsers() {
     try {
-        // Show loading message
         document.getElementById('userList').innerHTML = '<div class="loading">Loading users...</div>';
         
         // Fetch data from API
