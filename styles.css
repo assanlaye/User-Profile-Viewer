@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 1.25rem;
+}
+
+.app-container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding: 1.875rem 0;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: #60a5fa;
+    margin-bottom: 0.625rem;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+.content-container {
+    display: flex;
+    gap: 1.875rem;
+    min-height: 31.25rem;
+}
+
+.user-list-container {
+    flex: 1;
+    background: #1e293b;
+    border-radius: 1rem;
+    padding: 1.5625rem;
+    border: 1px solid #334155;
+}
+
+.user-details-container {
+    flex: 1;
+    background: #1e293b;
+    border-radius: 1rem;
+    padding: 1.875rem;
+    border: 1px solid #334155;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #f8fafc;
+    margin-bottom: 1.5625rem;
+    padding-bottom: 0.9375rem;
+    border-bottom: 2px solid #334155;
+}
+
+.user-list {
+    list-style: none;
+}
+
+.user-item {
+    padding: 1.125rem 1.25rem;
+    margin-bottom: 0.75rem;
+    background: #334155;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid #475569;
+}
+
+.user-item:hover {
+    background: #475569;
+    border-color: #60a5fa;
+}
+
+.user-item.active {
+    background: #3b82f6;
+    border-color: #60a5fa;
+}
+
+.user-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #f1f5f9;
+}
+
+.user-username {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-top: 0.3125rem;
+}
+
+.no-selection {
+    text-align: center;
+    color: #64748b;
+    padding: 3.75rem 1.25rem;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.user-detail {
+    margin-bottom: 1.5625rem;
+    padding-bottom: 0.9375rem;
+    border-bottom: 1px solid #334155;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #cbd5e1;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.detail-value {
+    color: #f8fafc;
+    font-size: 1.1rem;
+}
+
+.address-section, .company-section {
+    background: #0f172a;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    margin-top: 0.625rem;
+    border: 1px solid #334155;
+}
+
+.section-title-small {
+    font-weight: 600;
+    color: #cbd5e1;
+    margin-bottom: 0.625rem;
+    font-size: 1rem;
+}
+
+.loading {
+    text-align: center;
+    color: #94a3b8;
+    padding: 2.5rem 1.25rem;
+    font-size: 1.1rem;
+}
+
+.error {
+    text-align: center;
+    padding: 1.875rem;
+    background: #7f1d1d;
+    color: #fecaca;
+    border-radius: 0.75rem;
+    border: 1px solid #dc2626;
+}
+
+.retry-btn {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1.25rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.retry-btn:hover {
+    background: #2563eb;
+}
+
+@media (max-width: 48rem) {
+    .content-container {
+        flex-direction: column;
+    }
+    
+    .user-list-container {
+        margin-bottom: 1.25rem;
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    color: #94a3b8;
+    border-top: 1px solid #334155;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.github-link {
+    color: #60a5fa;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.github-link:hover {
+    color: #3b82f6;
+    text-decoration: underline;
+}
